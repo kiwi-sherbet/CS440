@@ -1,0 +1,32 @@
+\usepackage[top=1in, bottom=1.5in, left=0.5in, right=0.5in]{geometry} %Set margins.
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{multicol} %Multiple columns.
+\usepackage{fancyvrb}
+
+\usepackage{enumitem} %Single-space lists.
+\usepackage{graphicx} %Include graphics.
+\usepackage{float} %Put graphics exactly in place.
+
+\usepackage{listings} %Code blocks, set style below.
+\lstset{language = Java, aboveskip = 0mm, belowskip = 0mm, basicstyle = \small, breaklines = true}
+
+\usepackage{algpseudocode} %Algorithm pseudocode formatting.
+\algtext*{EndWhile} %Remove "end while" text
+\algtext*{EndIf} %Remove "end if" text
+\algtext*{EndFor} %Remove "end for" text
+\algtext*{EndFunction} %Remove "end function" text
+
+\usepackage{fancyhdr} %Header package.
+%\pagestyle{fancy} %Use header.
+\usepackage{lastpage} %Get number of last page.
+\rhead{Tifany Yung\\Algorithmic Genomic Biology\\April 7, 2015\\Page \thepage\ of \pageref{LastPage}}
+
+%\usepackage[superscript,biblabel]{cite}
+\usepackage[usenames,dvipsnames]{color}
+
+\newcommand{\Fix}[1]{\textcolor{red}{[#1]}}

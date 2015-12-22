@@ -1,0 +1,8 @@
+intermed_files=('*.aux' '*.bbl' '*.blg' '*.dvi' '*.log' '*.gz' '*.ps' '*~')
+
+for x in ${intermed_files[@]}; do
+    if ls $x 1> /dev/null 2>&1; then
+        echo Removing $x.
+        rm $x
+    fi
+done

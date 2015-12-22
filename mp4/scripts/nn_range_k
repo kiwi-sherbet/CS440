@@ -1,0 +1,7 @@
+if [ -f ranged_k_accuracies ]; then
+    rm ranged_k_accuracies
+fi
+for i in {1..10};do
+    echo $i ======================================
+    time ./nearest_neighbor.py $i
+done

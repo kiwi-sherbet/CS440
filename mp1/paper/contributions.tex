@@ -1,0 +1,106 @@
+\section{Individual Contributions}
+\subsection*{General}
+Tifany:
+\begin{itemize}[itemsep=0pt]
+  \item Set up Git repo structure for project and report.
+  \item Implemented utility methods for reading and storing the maze as a 2D matrix, marking the solution path on the maze, and printing the maze.
+  \item Set up code structure on which part solutions were built.
+\end{itemize}
+\subsection*{Extra credit}
+Mingyo:
+\begin{itemize}[itemsep=0pt]
+  \item Experimented with opengl for animation.
+  \item Made some graphics for animations 
+  \item Finalized animations with pygame, added path marking, visualization of goal, Pacman, and ghosts, marked visited goals.
+  \item Added support for ghosts to animations.
+  \item Took a demo video for extra credit assignemnts.
+\end{itemize}
+Xinyue:
+\begin{itemize}[itemsep=0pt]
+  \item Combine the multi-ghost algorithm with multi-goal algorithm.
+\end{itemize}
+\subsection*{Part 1}
+Mingyo:
+\begin{itemize}[itemsep=0pt]
+  \item Screenshots of solutions.
+\end{itemize}
+\subsubsection*{1.1}
+Mingyo:
+\begin{itemize}[itemsep=0pt]
+  \item Traced the code and checked logic for the DFS, BFS, greedy best-first search, and A* algorithms.
+  \item Fixed a bug where an extra coordinate was being appended to the solution path.
+\end{itemize}
+Tifany:
+\begin{itemize}[itemsep=0pt]
+  \item Implemented DFS, BFS, greedy best-first search, and A* algorithms.
+  \item Documented algorithm solutions in the report and described algorithm implementation and data structures choices in the report, including how to get good performance.
+\end{itemize}
+
+\subsubsection*{1.2}
+Mingyo:
+\begin{itemize}[itemsep=0pt]
+  \item Developed the alternate heuristic, where the heuristic is the Manhattan distance multiplied by the forward movement cost plus the turn cost.
+  \item Found a bug where the correct turn cost was not being added, and helped debug and design the fix.
+\end{itemize}
+Tifany:
+\begin{itemize}[itemsep=0pt]
+  \item Implemented the modified A* algorithms, using either Manhattan distance or alternate heuristic, that takes into account forward movement and turn costs, along with the alternate heuristic.
+  \item Helped debug and design the fix for the above bug and implemented it.
+  \item Documented alternate heuristic, its admissibility, and why it is more informed.
+\end{itemize}
+
+\subsubsection*{1.3}
+Mingyo:
+\begin{itemize}[itemsep=0pt]
+  \item Designed and implemented the algorithm to generate a path that won't cross a moving ghost.
+  \item Diagnosed oscillating ghosts problem when there are multiple ghosts and fixed the issue.
+  \item Designed the algorithm for multiple ghosts with complicated paths.
+  \item Designed the algorithm for multiple ghosts with complicated paths.
+  \item Fixed and Implemented the algorithm to deal ghosts with complicated paths.
+  \item Documented algorithm solutions in the report and described algorithm implementation.
+\end{itemize}
+Tifany:
+\begin{itemize}[itemsep=0pt]
+  \item Designed the algorithm to generate a path that won't cross a moving ghost.
+  \item Helped diagnose oscillating ghosts problem.
+\end{itemize}
+Xinyue : 
+\begin{itemize}[itemsep=0pt]
+  \item Designed a structure for multiple ghosts.
+\end{itemize}
+
+\subsection*{Part 2}
+Tifany:
+\begin{itemize}[itemsep=0pt]
+  \item Screen recordings.
+\end{itemize}
+\subsubsection*{2.1}
+Mingyo:
+\begin{itemize}[itemsep=0pt]
+  \item Designed the double A* loop algorithm to find a optimized path to visit multiple goals.
+  \item Suggested an admissible heuristic function for choosing goals.
+\end{itemize}
+Tifany:
+\begin{itemize}[itemsep=0pt]
+  \item Designed the general algorithm to decide which goal points A* should take Pacman to first.
+\end{itemize}
+Xinyue:
+\begin{itemize}[itemsep=0pt]
+	\item Design and implement the Dijkstra algorithm for finding the next goal.
+	\item Implemented the double loop algorithm combining the search for the next goal and A* search.
+	\item Documentation and report write-up. 
+\end{itemize}
+\subsubsection*{2.2}
+Mingyo:
+\begin{itemize}[itemsep=0pt]
+  \item Suggested an idea of restricting the number of goals to examine to expand less nodes.
+\end{itemize}
+Tifany:
+\begin{itemize}[itemsep=0pt]
+  \item Suggested the algorithm where, when one goal is reached, the next goal is determined by checking just its neighbors since goals were so dense on the given map.
+\end{itemize}
+Xinyue:
+\begin{itemize}[itemsep=0pt]
+  \item Design the algorithm for corner-oriented goal searching and implement the corresponding function.
+  \item Documentation and report write-up.
+\end{itemize}

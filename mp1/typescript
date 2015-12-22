@@ -1,0 +1,167 @@
+Script started on Thu Sep 24 19:09:52 2015
+[?1034hbash-3.2$ ls
+TODO		data		paper		scripts		typescript
+bash-3.2$ cd scripts/
+bash-3.2$ ls
+oepngl.py		run_dot.py		run_ghost_working.py
+run.py			run_dot.sh
+run.sh			run_ghost.py
+bash-3.2$ cd [K[K[Klscd scripts/ls[Kmake archivesdistclean[C[C[C[C[C[C[C[C[C[Cgit submodule update[2Pinit[C[C[C[C[C[C[C[C[C[Cls[Kcd Firmware/[C[C[C[C[C[C[C[C[C[Cgit clone --recursive https://github.com/PX4/Firmware[C[C[C[C[C[C[C[C[C[Cls[Kcd pixhawk_project/[C[C[C[C[C[C[C[C[C[Cls[Kcd Projects/[C[C[C[C[C[C[C[C[C[Cls[Karm-none-eabi-gcc --version[C[C[C[C[C[C[C[C[C[Csudo pip install pyserial empy[C[C[C[C[C[C[C[C[C[C[12Pbrew install cmakeastylegcc-arm-none-eabikconfig-frontends[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython2.7 r[Kru[K[Koepngl.py ../mov[K[K[Kdata/bigMA[Kze[K[Kaze.txt
+bash-3.2$ python2.7 oepngl.py ../data/bigMaze.txt[C[C[1P[1P[1P[1P[1P[1P[1@r[1@u[1@n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/bigMaze.txtmbigMaze.txtabigMaze.txt[1PbigMaze.txt[1PbigMaze.txt[1PbigMaze.txtmbigMaze.txtabigMaze.txtzbigMaze.txtebigMaze.txtGbigMaze.txthbigMaze.txtobigMaze.txtsbigMaze.txttbigMaze.txt/bigMaze.txt[C[C[C[C[C[C[C[C[C[C[C astarghost
+Traceback (most recent call last):
+  File "run.py", line 683, in <module>
+    main()
+  File "run.py", line 627, in main
+    maze_rows = read_file(maze_file)
+  File "run.py", line 52, in read_file
+    with open(fil) as f:
+IOError: [Errno 2] No such file or directory: '/Users/Ming/Projects/artificial_intellegence/mp1/scripts/../data/mazeGhost/bigMaze.txt'
+bash-3.2$ python2.7 run.py ../data/mazeGhost/bigMaze.txt astarghost[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@g[1@h[1@o[C[1@s[C[1@M[1@a[1@z[1@e[C
+Path cost: 83
+Number of nodes expanded: 1343
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%.%     % %   % %   %               %
+%...%% %%  % %  % %  % % % %% % %% %%
+% %.% %   %   %   % %     %   %     %
+%  .    %% % %%%%   %% % %%% %  %% %%
+% %.% % %         %           %   % %
+% %.     % % %% %%%% %% % %% % % %  %
+%  .% % %         %       %       % %
+%%%.%% % % % % %%%  % % %%  %% % % %%
+% g.....      %   % % %   % % %     %
+% %%g%%.%%% %   %       %%      %% %%
+% ggg  .      %   % % %   % % % %   %
+% %%% %.%%%% % % %% % % %%%%    % % %
+%   %  .%   %   %       % % % % %   %
+%% % %%...% % %   % %% %% %%  %  % %%
+% %   % %.......%   %       %   %   %
+% % % %   %% %%.%%%%  % % %%% %   % %
+%       %gggg g.gg% %     % %   %   %
+%% % %%  % %% %.%  % % %%    %%% % %%
+%   %          .  % % % % % %       %
+% %  % % %% % %.% %         %% %%% %%
+%   % %   %    .  % % % % % %   %   %
+% %%  %%%  % %%.%%    % %% %  %% %% %
+%   %   % %   %...% %       %   %   %
+%% % % %% %% % %%.....% %% % %%  % %%
+% %   %           % %.... %     %   %
+%   %   %% %%% %% %   %%.%% % % %.% %
+% %   %     % % %   %   ...     %.% %
+%   %  % %% %  %% % % % %%.%%% %%. %%
+% % % % % % % %       % % ..% % %.% %
+% %   %      % % % %%     %.....%.%%%
+%   %   % % %   %   % % % % % %.....%
+%%% %% % %    %   %  % %  %% % %%%%.%
+% %       % %   % % %   % %       %.%
+% % % % %    % %% % % %  % %% % %  .%
+%         % %   %       %     %   %P%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+()
+bash-3.2$ s[Kcd ..
+bash-3.2$ import pygame
+bash: import: command not found
+bash-3.2$ from pygame.locals import *
+from: can't read /var/mail/pygame.locals
+bash-3.2$ 
+bash-3.2$ from OpenGL.GL import *
+from: can't read /var/mail/OpenGL.GL
+bash-3.2$ from OpenGL.GLU import *
+from: can't read /var/mail/OpenGL.GLU
+bash-3.2$ 
+bash-3.2$ verticies = (
+bash: syntax error near unexpected token `('
+bash-3.2$     (1, -1, -1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (1, 1, -1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (-1, 1, -1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (-1, -1, -1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (1, -1, 1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (1, 1, 1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (-1, -1, 1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (-1, 1, 1)
+bash: -1,: command not found
+bash-3.2$     )
+bash: syntax error near unexpected token `)'
+bash-3.2$ 
+bash-3.2$ edges = (
+bash: syntax error near unexpected token `('
+bash-3.2$     (0,1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (0,3),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (0,4),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (2,1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (2,3),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (2,7),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (6,3),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (6,4),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (6,7),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (5,1),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (5,4),
+bash: syntax error near unexpected token `,'
+bash-3.2$     (5,7)
+bash: 5,7: command not found
+bash-3.2$     )
+bash: syntax error near unexpected token `)'
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ def Cube():
+bash: syntax error near unexpected token `('
+bash-3.2$     glBegin(GL_LINES)
+bash: syntax error near unexpected token `GL_LINES'
+bash-3.2$     for edge in edges:
+>         for vertex in edge:
+bash: syntax error near unexpected token `for'
+bash-3.2$             glVertex3fv(verticies[vertex])
+bash: syntax error near unexpected token `verticies[vertex]'
+bash-3.2$     glEnd()
+> 
+> 
+> def main():
+bash: syntax error near unexpected token `def'
+bash-3.2$     pygame.init()
+>     display = (800,600)
+bash: syntax error near unexpected token `display'
+bash-3.2$     pygame.display.set_mode(display, DOUBLEBUF|OPENGL)
+bash: syntax error near unexpected token `display,'
+bash-3.2$ 
+bash-3.2$     gluPerspective(45, (display[0]/display[1]), 0.1, 50.0)
+bash: syntax error near unexpected token `45,'
+bash-3.2$ 
+bash-3.2$     glTranslatef(0.0,0.0, -5)
+bash: syntax error near unexpected token `0.0,0.0,'
+bash-3.2$ 
+bash-3.2$     while True:
+>         for event in pygame.event.get():
+bash: syntax error near unexpected token `('
+bash-3.2$             if event.type == pygame.QUIT:
+>                 pygame.quit()
+>                 quit()
+bash: syntax error near unexpected token `quit'
+bash-3.2$ 
+bash-3.2$         glRotatef(1, 3, 1, 1)
+bash: syntax error near unexpected token `1,'
+bash-3.2$         glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT)
+bash: syntax error near unexpected token `GL_COLOR_BUFFER_BIT'
+bash-3.2$         Cube()
+>         pygame.display.flip()
+bash: syntax error near unexpected token `pygame.display.flip'
+bash-3.2$         pygame.time.wait(10)
+bash: syntax error near unexpected token `10'
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ main()

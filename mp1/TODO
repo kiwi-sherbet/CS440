@@ -1,0 +1,34 @@
+Mingyo:
+
+If ghost is Pacman neighbor: (Logic for Pacman.)
+  - Check all 4 directions.
+  - Make paths, compute cost, etc. for all available moves of the 4.
+  - Continue to expand based on which path has lowest cost (heap handles).
+
+If one of above paths leads to dead end:
+  - Pop from heap and continue.
+
+If one of the above paths leads to repeated maze state:
+  - HOW DO WE DETECT? (*)
+  - Pop from head and continue. ($)
+
+(*):
+  - Track Pacman+ghost location, ghost direction.
+  - Pacman location already tracked in curr_data and frontier as part of the path.
+  - We need associate Pacman loc w/ghost loc+dir -> Need to keep Pacman loc anyways.
+  - ((r_p, c_p), (r_g, c_g), g_dir) (^)
+  - We need to do a check before trying its neighbors that we have not seen this tuple before.
+
+(^):
+  - Keep these tuples in an array(?).
+  - If tuple already in the array, then we have a repeated maze state -> ($)
+
+onel line
+
+Tifany:
+  - Write up part 1.1 implementation.
+  - Implement direction tracking and new turn/move heuristics for part 1.2.
+
+
+Xinyue:
+  - Debug 1.1 greedy and A* (why is there that dead-end branch?).

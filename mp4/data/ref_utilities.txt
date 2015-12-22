@@ -1,0 +1,14 @@
+Reference utilities of states:
+
+-0.0893      -1           0.1235      0.2727      0.4901      1.0104     
+0.0481       -0.0012      0.0313      0           -1          1.6882     
+0.1515       0.0594       0.0162      0           1.6514      3       
+0.3156       0.1565       0.0909      0           1.1625      1.8509     
+0.5760       0.2235       0.2029      0.4219      0.7193      1.1257     
+1            -1           0.0039      0           -1          -1  
+
+Note:
+* in your report, you should display utility values with a higher precision.
+* discount factor = 0.7
+* rewards squares are treated as terminate states
+* the values above are rounded, not truncated

@@ -1,0 +1,9 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.gz
+*~
+*.pyc
+*.pdf
+.DS_Store
